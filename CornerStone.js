@@ -69,12 +69,10 @@ function draw()
 	Render.StringCustom(x + 38, y + 24, 1, "FPS: ", [255, 255, 255, 255], font);//+Math.floor(1/Global.Frametime().toString())
 	Render.StringCustom(x + 100, y + 24, 1, "PING: ", [255, 255, 255, 255], font);//+Math.round(Global.Latency() * 1000).toString()
 	Render.StringCustom(x + 170, y + 24, 1, "SPEED: ", [255, 255, 255, 255], font);//+Math.round(velocity).toString()
-    Render.StringCustom(x + 237, y + 24, 1, "TICK: ", [255, 255, 255, 255], font);//+Globals.Tickrate().toString()
+    Render.StringCustom(x + 237, y + 24, 1, "RATE: ", [255, 255, 255, 255], font);//+Globals.Tickrate().toString()
 	Render.StringCustom(x + 56, y + 24, 1,"" +Math.floor(1/Global.Frametime().toString()), [255, 255, 255, 255], font);
 	Render.StringCustom(x + 116, y + 24, 1,"" +Math.round(Global.Latency() * 1000).toString(), [255, 255, 255, 255], font);
 	Render.StringCustom(x + 196, y + 24, 1,"" +Math.round(velocity).toString(), [255, 255, 255, 255], font);
 	Render.StringCustom(x + 256, y + 24, 1,"" +Globals.Tickrate().toString(), [255, 255, 255, 255], font);
 }
 Global.RegisterCallback("Draw", "draw")
-
-	
